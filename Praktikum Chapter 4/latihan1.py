@@ -6,4 +6,4 @@ totalrental=RentalAkhir-Rentalawal
 waktuRentalnext=totalrental-12
 totaltarifB=waktuRentalnext * tarifB
 totalbiaya=tarifA+totaltarifB
-print (totalbiaya)
+print(int(totalbiaya))
