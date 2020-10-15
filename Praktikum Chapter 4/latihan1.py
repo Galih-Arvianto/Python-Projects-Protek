@@ -3,7 +3,7 @@ tarifB=10000
 Rentalawal=06.00
 RentalAkhir=23.50
 totalrental=RentalAkhir-Rentalawal
-waktuRentalnext=totalrental-12
+waktuRentalnext=int(totalrental-12)
 totaltarifB=waktuRentalnext * tarifB
 totalbiaya=tarifA+totaltarifB
-print(int(totalbiaya))
+print(totalbiaya)
