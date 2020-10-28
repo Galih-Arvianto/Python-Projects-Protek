@@ -1,22 +1,12 @@
 from random import randint
-ans = randint(1, 100)
-jwb = 'K'
-print()
-
-while(jwb != ans):
-  if(jwb == 'K'):
-    print("============== Permainan Tebak Bilangan ==============")
-    print()
-    print("Komputer telah memilih bilangan bulat dari 1 sampai 100 secara acak. Sekarang tugas kamu adalah menebaknya!")
-    print()
-    print("======================================================")
-    print()
-  elif(jwb < ans):
-    print("Bilangan tebakan kamu terlalu kecil!")
-  elif(jwb > ans):
-    print("Bilangan tebakan kamu terlalu besar!")
-  
-  jwb = int(input("Masukkan angka tebakan kamu : "))
-  print()
-
-print("Selamat! Tebakan kamu benar!")
+print('"Hai.. nama saya Mr.Lappie, saya telah memilih sebuah bilanga bulat secara acak antara 0 s/d 100. Silakan tebak ya!!!" ')
+while True :
+    bil = randint(0, 100)
+    ans = int(input('Tebakan Anda = '))
+    if(ans > bil):
+        print('Hehehe... Bilangan tebakan anda terlalu besar')
+    elif(ans < bil):
+        print('Hehehe... Bilangan tebakan anda terlalu kecil')
+    elif (ans == bil):
+        print('Yeeee... Bilangan tebakan anda BENAR :-)')
+        break
